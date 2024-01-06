@@ -1,0 +1,101 @@
+@font-face {
+	font-family: 'YourFontName';
+	src: url('path-to-your-font-file.woff2') format('woff2'),
+		 url('path-to-your-font-file.woff') format('woff');
+ }
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: var(--tg-theme-text-color);
+	background: var(--tg-theme-bg-color);
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.table {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 200px 200px 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_title {
+	width: 400px;
+	padding-right: 100;
+	padding-left: 100;
+	padding-top: 50;
+	padding-bottom: 100;
+	border-radius: 5pt;
+	border: solid 1pt rgb(168, 168, 168);
+}
+
+.img_menu {
+	width: 200px;
+	padding-top: 50;
+	border-radius: 5pt;
+	border: solid 1pt rgba(177, 177, 177, 0.5);
+}
+
+.item {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.btn {
+	display: block;
+	padding: 10px 20px;
+	border: none;
+	background: rgb(146, 146, 146);
+	border-radius: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 10px;
+	box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s ease 0s;
+	transition: background .2s linear;
+}
+
+.btn:hover {
+	background: rgb(34, 34, 34);
+}
+
+.menu_btn {
+    display: block;
+    margin-left: 20px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-right: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: rgb(146, 146, 146);
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background .2s linear;
+}
+
+.menu_btn:hover {
+    background: rgb(34, 34, 34);
+}
+
+.usercard {
+	text-align: center;
+}
+
+.title {
+	text-align: center;
+}
