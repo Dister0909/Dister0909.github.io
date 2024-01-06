@@ -28,7 +28,7 @@ body {
 }
 
 .img_title {
-	width: 400px;
+	width: 200px;
 	padding-right: 100;
 	padding-left: 100;
 	padding-top: 50;
@@ -38,7 +38,7 @@ body {
 }
 
 .img_menu {
-	width: 200px;
+	width: 100px;
 	padding-top: 50;
 	border-radius: 5pt;
 	border: solid 1pt rgba(177, 177, 177, 0.5);
