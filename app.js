@@ -14,6 +14,8 @@ let btn_A4 = document.getElementById("btnA4");
 let btn_A5 = document.getElementById("btnA5");
 let btn_A6 = document.getElementById("btnA6");
 
+let main_btn_visible = "none";
+
 tg.expand();
 
 menu_1.style.display = "none";
@@ -38,42 +40,76 @@ btn_menu_1.addEventListener("click", function() {
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
-tg.MainButton.hide();
-
 btn_A1.addEventListener("click", function() {
-	tg.MainButton.setText("Перейти к Linolit 350");
-	item_to_telegram = "A1";
-	tg.MainButton.show();
+	if (main_btn_visible != "a1") {
+		tg.MainButton.setText("Вы выбрали Linolit 350");
+		item_to_telegram = "A1";
+		tg.MainButton.show();
+
+		main_btn_visible == "a1";
+	} else {
+		tg.MainButton.hide();
+	}
 });
 
 btn_A2.addEventListener("click", function() {
-	tg.MainButton.setText("Перейти к Linolit 520");
-	item_to_telegram = "A2";
-	tg.MainButton.show();
+	if (main_btn_visible != "a2") {
+		tg.MainButton.setText("Вы выбрали Linolit 520");
+		item_to_telegram = "A2";
+		tg.MainButton.show();
+		
+		main_btn_visible == "a2";
+	} else {
+		tg.MainButton.hide();
+	}
 });
 
 btn_A3.addEventListener("click", function() {
-	tg.MainButton.setText("Перейти к Linolit 550");
-	item_to_telegram = "A3";
-	tg.MainButton.show();
+	if (main_btn_visible != "a3") {
+		tg.MainButton.setText("Вы выбрали Linolit 550");
+		item_to_telegram = "A3";
+		tg.MainButton.show();
+		
+		main_btn_visible == "a3";
+	} else {
+		tg.MainButton.hide();
+	}
 });
 
 btn_A4.addEventListener("click", function() {
-	tg.MainButton.setText("Перейти к Linolit 800");
-	item_to_telegram = "A4";
-	tg.MainButton.show();
+	if (main_btn_visible != "a4") {
+		tg.MainButton.setText("Вы выбрали Linolit 800");
+		item_to_telegram = "A4";
+		tg.MainButton.show();
+		
+		main_btn_visible == "a4";
+	} else {
+		tg.MainButton.hide();
+	}
 });
 
 btn_A5.addEventListener("click", function() {
-	tg.MainButton.setText("Перейти к Linolit 670");
-	item_to_telegram = "A5";
-	tg.MainButton.show();
+	if (main_btn_visible != "a5") {
+		tg.MainButton.setText("Вы выбрали Linolit 670");
+		item_to_telegram = "A5";
+		tg.MainButton.show();
+		
+		main_btn_visible == "a5";
+	} else {
+		tg.MainButton.hide();
+	}
 });
 
 btn_A6.addEventListener("click", function() {
-	tg.MainButton.setText("Перейти к Linolit 804 Remote Control");
-	item_to_telegram = "A6";
-	tg.MainButton.show();
+	if (main_btn_visible != "a6") {
+		tg.MainButton.setText("Вы выбрали Linolit 804 Remote Control");
+		item_to_telegram = "A6";
+		tg.MainButton.show();
+		
+		main_btn_visible == "a6";
+	} else {
+		tg.MainButton.hide();
+	}
 });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
